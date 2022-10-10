@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="D:/TAF">
+        <classes>
+            <class name="tests.AccountTest">
+                <methods>
+                    <include name="changePassword_test"/>
+                </methods>
+            </class>
+            <class name="tests.ContactUsTest">
+                <methods>
+                    <include name="userContact_Test"/>
+                </methods>
+            </class>
+            <class name="tests.Login_LogoutTest">
+                <methods>
+                    <include name="test_logout"/>
+                    <include name="test_login"/>
+                </methods>
+            </class>
+            <class name="tests.RegisterTest">
+                <methods>
+                    <include name="test_register"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
